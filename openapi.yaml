@@ -1,0 +1,111 @@
+info:
+  description: Auto-generated API spec for the Quizzards application, a quiz management
+    system.
+  title: Quizzards API
+  version: 1.0.0
+paths:
+  /fs-static/<path:filename>:
+    get:
+      description: GET /fs-static/<path:filename>
+  /fs-logout:
+    get:
+      description: GET /fs-logout
+    post:
+      description: POST /fs-logout
+  /fs-login:
+    get:
+      description: GET /fs-login
+    post:
+      description: POST /fs-login
+  /verify:
+    get:
+      description: GET /verify
+    post:
+      description: POST /verify
+  /:
+    get:
+      description: GET /
+  /<path:path>:
+    get:
+      description: GET /<path:path>
+  /login:
+    post:
+      description: POST /login
+  /register:
+    post:
+      description: POST /register
+  /logout:
+    post:
+      description: POST /logout
+  /admin/subjects:
+    post:
+      description: POST /admin/subjects
+    get:
+      description: GET /admin/subjects
+  /admin/subjects/<int:subject_id>:
+    put:
+      description: PUT /admin/subjects/<int:subject_id>
+  /admin/subjects/delete:
+    post:
+      description: POST /admin/subjects/delete
+  /admin/subjects/<int:subject_id>/chapters:
+    post:
+      description: POST /admin/subjects/<int:subject_id>/chapters
+    get:
+      description: GET /admin/subjects/<int:subject_id>/chapters
+  /admin/chapters:
+    get:
+      description: GET /admin/chapters
+  /admin/chapters/<int:chapter_id>:
+    put:
+      description: PUT /admin/chapters/<int:chapter_id>
+    delete:
+      description: DELETE /admin/chapters/<int:chapter_id>
+  /admin/quizzes:
+    get:
+      description: GET /admin/quizzes
+    post:
+      description: POST /admin/quizzes
+  /admin/chapters/<int:chapter_id>/quizzes:
+    get:
+      description: GET /admin/chapters/<int:chapter_id>/quizzes
+  /admin/quizzes/<int:quiz_id>:
+    put:
+      description: PUT /admin/quizzes/<int:quiz_id>
+    delete:
+      description: DELETE /admin/quizzes/<int:quiz_id>
+  /admin/quizzes/<int:quiz_id>/questions:
+    post:
+      description: POST /admin/quizzes/<int:quiz_id>/questions
+    get:
+      description: GET /admin/quizzes/<int:quiz_id>/questions
+  /admin/questions/<int:question_id>:
+    put:
+      description: PUT /admin/questions/<int:question_id>
+    delete:
+      description: DELETE /admin/questions/<int:question_id>
+  /admin/users:
+    get:
+      description: GET /admin/users
+  /admin/summary:
+    get:
+      description: GET /admin/summary
+  /admin/export-all-users:
+    post:
+      description: POST /admin/export-all-users
+  /user/subjects:
+    get:
+      description: GET /user/subjects
+  /user/quiz/<int:quiz_id>:
+    get:
+      description: GET /user/quiz/<int:quiz_id>
+  /user/quiz/<int:quiz_id>/submit:
+    post:
+      description: POST /user/quiz/<int:quiz_id>/submit
+  /user/scores:
+    get:
+      description: GET /user/scores
+  /user/scores/<int:score_id>/details:
+    get:
+      description: GET /user/scores/<int:score_id>/details
+openapi: 3.1.0
